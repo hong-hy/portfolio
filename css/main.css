@@ -47,3 +47,19 @@ section .tit span {font-family: 'Montserrat', sans-serif; display: inline-block;
     .about-sec .profile-info p {font-size: 14px;}
     .about-sec .profile-info .date {font-size: 13px;}
 }
+
+/* contact */
+.contact-sec {margin-bottom: 100px;}
+.contact-sec ul li {position: relative; border-bottom: 1px solid #101010; margin-top: 40px; padding-bottom: 12px;}
+.contact-sec ul li a {display: block;}
+.contact-sec ul li a span {font-family: 'Montserrat', sans-serif; letter-spacing: -0.2px; font-size: 20px;}
+.contact-sec ul li a span:first-child {font-weight: 300;}
+.contact-sec ul li a span:last-child {position: absolute; top: 0; right: 0; font-weight: 500;}
+.contact-sec ul li.phone a {cursor: url('../img/phone.cur'), auto;}
+.contact-sec ul li.mail a {cursor: url('../img/mail.cur'), auto;}
+
+@media (max-width: 768px) {
+    .contact-sec {margin-bottom: 70px;}
+    .contact-sec ul li {margin-top: 26px; padding-bottom: 8px;}
+    .contact-sec ul li a span {font-size: 16px;}
+}
