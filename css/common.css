@@ -1,0 +1,17 @@
+/* reset */
+* {font-family:'Noto Sans KR', sans-serif;font-weight:400;letter-spacing:0;color:#000;outline:none;}
+html,body {width:100%;height:100%;}
+body {-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;background:#f5eded;}
+img {width:100%;border:none;display:block;}
+html,body,ul,ol,p,h1,h2,h3,h4,h5 {margin:0;padding:0;}
+strong {font-weight:700;color:inherit;}
+a {text-decoration: none;outline:none;font-size:inherit;color:inherit;}
+ul li, ol li {list-style:none;vertical-align: middle}
+textarea {resize:none;}
+select {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
+select::-ms-expand {display:none;}
+form * {border:0;outline:0;margin:0;padding:0;}
+input,button,textarea {border-radius:0;-webkit-appearance:none;box-shadow:none;}
+svg {overflow:hidden;width:100%;height:100%;}
+table {border-collapse:collapse;}
+button {border:none;}
