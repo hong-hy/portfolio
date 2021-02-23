@@ -1,16 +1,9 @@
-// header
-$('header .menu-btn').on('click', function() {
-    $(this).toggleClass('active');
-    $('header .menu-item').toggleClass('active');
-    $('header .logo').toggleClass('active');
-});
-
-// section01
 gsap.defaults({
     ease: 'power4',
     duration: 0.7
 });
 
+// top section
 const mainVisualTl = gsap.timeline();
 
 mainVisualTl.from('.top-sec .wrap-img li', {
