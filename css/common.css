@@ -15,3 +15,50 @@ input,button,textarea {border-radius:0;-webkit-appearance:none;box-shadow:none;}
 svg {overflow:hidden;width:100%;height:100%;}
 table {border-collapse:collapse;}
 button {border:none;}
+
+/* header */
+header {position: fixed; width: 100%; top: 0; left: 0; z-index: 500; text-align: right;}
+header .logo {position: absolute; top: 100px; left: -50px; z-index: 500; transform: rotate(-90deg);}
+header .logo a {font-family: 'Montserrat', sans-serif; font-size: 20px; font-weight: 700; letter-spacing: -0.5px; transition: 0.3s ease;}
+header .logo.active a {color: #fff;}
+header .menu-btn {position: relative; display: inline-block; width: 40px; height: 20px; z-index: 500; margin: 40px; cursor: pointer; vertical-align: top;}
+header .menu-btn::before, header .menu-btn::after {content: ''; position: absolute; display: block; width: 100%; height: 5px; background: #000; transition: 0.3s ease;}
+header .menu-btn::before {top: 0;}
+header .menu-btn::after {bottom: 0;}
+header .menu-btn.active::before {top: 6px; transform: rotate(45deg); background: #fff;}
+header .menu-btn.active::after {bottom: 9px; transform: rotate(-45deg); background: #fff;}
+header .menu-item {position: absolute; width: 100%; height: 100vh; top: 0; right: -100%; background: #101010; transition: 0.3s ease;}
+header .menu-item ul {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+header .menu-item ul li {text-align: center; margin-bottom: 26px; cursor: pointer;}
+header .menu-item ul li a {position: relative; font-family: 'Montserrat', sans-serif; font-size: 48px; font-weight: 300; color: #fff; }
+header .menu-item ul li a::after {content: ''; position: absolute; width: 0; height: 1px; left: 0; bottom: 0; background: #fff; transition: 0.3s ease;}
+header .menu-item ul li:hover a::after {width: 100%;}
+header .menu-item.active {right: 0;}
+
+@media (max-width: 768px) {
+    header {background: #101010;}
+    header .logo {top: 0; left: 24px; transform: none; color: #fff;}
+    header .logo a {font-size: 18px;}
+    header .menu-btn {width: 30px; height: 14px; margin: 24px;}
+    header .menu-btn::before, header .menu-btn::after {height: 3px; background: #fff;}
+    header .menu-btn.active::before {top: 5px;}
+    header .menu-btn.active::after {bottom: 6px;}
+    header .menu-item ul {width: 100%;}
+    header .menu-item ul li {margin-bottom: 16px;}
+    header .menu-item ul li a {font-size: 32px;}
+    header .menu-item ul li:last-child {margin-bottom: 0;}
+    header .menu-item ul li a::after {display: none;}
+}
+
+/* footer */
+footer {background: #101010; padding: 30px 100px; text-align: right;}
+footer small {color: #fff;}
+footer p {color: #fff; font-size: 14px; margin-top: 5px; letter-spacing: -0.5px;}
+
+@media (max-width: 1080px) {
+    footer {padding: 30px 10%;}
+}
+
+@media (max-width: 768px) {
+    footer {padding: 20px 24px;}
+}
