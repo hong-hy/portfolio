@@ -72,5 +72,5 @@ header .menu-item.active {right: 0;}
     .top-sec .wrap-img li:nth-child(1) {top: 15%; left: 2%;}
     .top-sec .wrap-img li:nth-child(2) {top: 35%; right: 2%;}
     .top-sec .wrap-img li:nth-child(3) {bottom: 5%; left: 2%;}
-    .top-sec .txt {font-size: 28px; letter-spacing: -2.5px; color: #fff;}
+    .top-sec .txt {font-size: 28px; letter-spacing: -2.5px;}
 }

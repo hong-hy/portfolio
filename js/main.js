@@ -8,26 +8,19 @@ $('header .menu-btn').on('click', function() {
 // section01
 gsap.defaults({
     ease: 'power4',
-    duration: 1
+    duration: 0.7
 });
 
-const mainVisualTl = gsap.timeline({
-    scrollTrigger: {
-        trigger: '.top-sec',
-        start: 'top top',
-        end: 'bottom top',
-        scrub: 1,
-        pin: true
-    }
-});
+const mainVisualTl = gsap.timeline();
 
 mainVisualTl.from('.top-sec .wrap-img li', {
     opacity: 0,
+    y: 30,
     stagger: {
-        each: 0.5
+        each: 0.3
     }
 })
 .from('.top-sec .txt', {
     opacity: 0,
     y: 100
-})
+});
