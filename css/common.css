@@ -64,3 +64,18 @@ footer p {color: #fff; font-size: 14px; margin-top: 5px; letter-spacing: -0.5px;
     footer small {font-size: 12px;}
     footer p {font-size: 12px;}
 }
+
+/* top button */
+.top-btn {position: fixed; right: 30px; bottom: 100px; width: 46px; height: 30px; cursor: pointer; opacity: 0; visibility: hidden; transition: 0.3s ease;}
+.top-btn.active {opacity: 1; visibility: visible;}
+.top-btn::before, .top-btn::after {content: ''; position: absolute; width: 23px; height: 2px; top: 50%; transform: translateY(-50%); background: #101010; transition: 0.2s ease;}
+.top-btn::before {left: 0;}
+.top-btn::after {right: 0;}
+.top-btn:hover::before {width: 28px; transform: rotate(-45deg);}
+.top-btn:hover::after {width: 27px; transform: rotate(45deg);}
+
+@media (max-width: 768px) {
+    .top-btn {right: 24px; bottom: 60px;}
+    .top-btn::before {width: 28px; transform: rotate(-45deg);}
+    .top-btn::after {width: 27px; transform: rotate(45deg);}
+}
