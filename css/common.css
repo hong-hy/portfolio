@@ -51,7 +51,7 @@ header .menu-item.active {right: 0;}
 }
 
 /* footer */
-footer {background: #101010; padding: 30px 100px; text-align: right;}
+footer {background: #101010; padding: 30px 100px; text-align: center; word-break: keep-all;}
 footer small {color: #fff;}
 footer p {color: #fff; font-size: 14px; margin-top: 5px; letter-spacing: -0.5px;}
 
@@ -61,4 +61,6 @@ footer p {color: #fff; font-size: 14px; margin-top: 5px; letter-spacing: -0.5px;
 
 @media (max-width: 768px) {
     footer {padding: 20px 24px;}
+    footer small {font-size: 12px;}
+    footer p {font-size: 12px;}
 }
