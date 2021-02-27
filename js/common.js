@@ -20,4 +20,15 @@ $(window).on('scroll', function() {
             scrollTop:0
         });
     });
+
+    var docH = $(document).height();
+    var winH = $(this).height();
+    var footer = $('footer').outerHeight();
+    var test = (docH-winH) - footer/2;
+
+    if (scrollTop > test) {
+        $('.top-btn').addClass('end');
+    } else {
+        $('.top-btn').removeClass('end');
+    }
 });

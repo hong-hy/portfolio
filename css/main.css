@@ -12,7 +12,7 @@ section .tit span {font-family: 'Montserrat', sans-serif; display: inline-block;
 }
 
 /* top section */
-.top-sec {height: 100vh; padding: 0 100px;}
+.top-sec {position: relative; height: 100vh; padding: 0 100px;}
 .top-sec .wrap-img li {position: absolute;}
 .top-sec .wrap-img li:nth-child(1) {top: 2%; left: 2%;}
 .top-sec .wrap-img li:nth-child(2) {top: 15%; right: 2%;}
