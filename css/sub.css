@@ -4,7 +4,7 @@ section .cate::after {content: ''; position: absolute; width: 42px; height: 42px
 section .item {margin-bottom: 52px;}
 section .item:nth-child(even) {text-align: right;}
 section .item a {max-width: 550px; display: inline-block; vertical-align: top; text-align: left;}
-section .item .tit {font-size: 26px; font-weight: 500; letter-spacing: -0.5px; margin: 10px 0px 6px 6px;}
+section .item .tit {font-family: 'Montserrat', 'Noto Sans KR', sans-serif; font-size: 26px; font-weight: 500; letter-spacing: -0.5px; margin: 10px 0px 6px 6px;}
 section .item .desc {font-size: 20px; margin:  0 0 0 6px; letter-spacing: -0.5px;}
 section .item .sub {font-size: 14px; font-weight: 300; margin: 2px 0 0 6px; color: #2b2b2b;}
 
