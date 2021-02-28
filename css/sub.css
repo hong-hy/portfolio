@@ -1,0 +1,23 @@
+section {max-width: 880px; margin: 0 auto; padding-top: 80px;}
+section .cate {position: relative; display: inline-block; font-family: 'Montserrat', sans-serif; font-size: 64px; font-weight: 900; letter-spacing: -1.5px; margin-bottom: 20px;}
+section .cate::after {content: ''; position: absolute; width: 42px; height: 42px; top: 0px; right: -46px; z-index: -1; background: url('../img/quotes.svg') center no-repeat; background-size: 100%;}
+section .item {margin-bottom: 52px;}
+section .item:nth-child(even) {text-align: right;}
+section .item a {max-width: 550px; display: inline-block; vertical-align: top; text-align: left;}
+section .item .tit {font-size: 26px; font-weight: 500; letter-spacing: -0.5px; margin: 10px 0px 6px 6px;}
+section .item .desc {font-size: 20px; margin:  0 0 0 6px; letter-spacing: -0.5px;}
+section .item .sub {font-size: 14px; font-weight: 300; margin: 2px 0 0 6px; color: #2b2b2b;}
+
+@media (max-width: 1080px) {
+    section {padding: 80px 10% 0; overflow: hidden;}
+}
+
+@media (max-width: 768px) {
+    section {padding: 90px 24px 0;}
+    section .cate {font-size: 48px;}
+    section .cate::after {width: 34px; height: 34px; right: -40px;}
+    section .item {margin-bottom: 36px;}
+    section .item .tit {font-size: 20px; margin: 6px 0 4px 6px;}
+    section .item .desc {font-size: 16px;}
+    section .item .sub {font-size: 13px; margin: 0 0 0 6px;}
+}
