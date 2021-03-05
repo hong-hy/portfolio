@@ -37,7 +37,8 @@ section .tit span {font-family: 'Montserrat', sans-serif; display: inline-block;
 .about-sec .profile-info p {font-size: 16px; font-weight: 300; letter-spacing: -0.6px; word-break: keep-all;}
 .about-sec .profile-info .tit {font-size: 13px; font-weight: 700;}
 .about-sec .profile-info .date {display: block; font-size: 14px; font-weight: 500; color: #525252; margin-top: 2px;}
-.about-sec .profile-info .multi p:not(.tit) {margin-bottom: 5px;}
+.about-sec .profile-info .multi p:not(.tit) {margin-bottom: 4px;}
+.about-sec .profile-info .multi .tit {margin-bottom: 3px;}
 
 @media (max-width: 768px) {
     .about-sec .profile-img {width: 100%; margin-right: 0;}
